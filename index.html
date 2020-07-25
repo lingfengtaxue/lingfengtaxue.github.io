@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img {
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            /* opacity: 0.2; */
+            z-index: -1;
+        }
+
+        #bg {
+            display: inherit;
+        }
+
+        #play {
+            /* 按钮美化 */
+            width: 150px;
+            /* 宽度 */
+            height: 40px;
+            /* 高度 */
+            border-width: 0px;
+            /* 边框宽度 */
+            border-radius: 3px;
+            /* 边框半径 */
+            background: pink;
+            /* 背景颜色 */
+            cursor: pointer;
+            /* 鼠标移入按钮范围时出现手势 */
+            outline: none;
+            /* 不显示轮廓线 */
+            font-family: Microsoft YaHei;
+            /* 设置字体 */
+            color: white;
+            /* 字体颜色 */
+            font-size: 17px;
+            /* 字体大小 */
+            vertical-align: middle;
+        }
+
+        #play:hover {
+            /* 鼠标移入按钮范围时改变颜色 */
+            background: #5599FF;
+        }
+
+        div {
+            margin: 0 auto;
+            position: absolute;
+            top: 80%;
+            left: 30%;
+        }
+
+        .animation1 {
+            animation: opacitychangeto0 12s;
+        }
+        .animation2 {
+            animation: opacitychangeto1 12s;
+        }
+
+        @keyframes opacitychangeto0 {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes opacitychangeto1 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="music">
+        <source src="1.mp3">
+        您的浏览器不支持 audio 元素。
+    </audio>
+    <img src="./image/22.jpg" alt="" id="bg">
+    <img src="./image/13.jpg" alt="" id="img13">
+    <img src="./image/1.jpg" alt="" id="img1">
+    <img src="./image/4.jpg" alt="" id="img4">
+    <img src="./image/10.jpg" alt="" id="img10">
+    <img src="./image/15.jpg" alt="" id="img15">
+    <img src="./image/16.jpg" alt="" id="img16">
+    <img src="./image/27.jpg" alt="" id="img27">
+    <img src="./image/28.jpg" alt="" id="img28">
+    <img src="./image/26.jpg" alt="" id="img26">
+    <img src="./image/14.jpg" alt="" id="img14">
+    <img src="./image/19.jpg" alt="" id="img19">
+    <img src="./image/12.jpg" alt="" id="img12">
+    <img src="./image/17.jpg" alt="" id="img17">
+    <img src="./image/25.jpg" alt="" id="img25">
+    <img src="./image/23.jpg" alt="" id="img23">
+    <img src="./image/24.jpg" alt="" id="img24">
+    <img src="./image/21.jpg" alt="" id="img21">
+    <img src="./image/11.jpg" alt="" id="img11">
+    <img src="./image/9.jpg" alt="" id="img9">
+    <img src="./image/6.jpg" alt="" id="img6">
+    <img src="./image/7.jpg" alt="" id="img7">
+    <img src="./image/8.jpg" alt="" id="img8">
+    <img src="./image/2.jpg" alt="" id="img2">
+    <img src="./image/5.jpg" alt="" id="img5">
+    <img src="./image/3.jpg" alt="" id="img3">
+    <img src="./image/18.jpg" alt="" id="img18">
+    <img src="./image/20.jpg" alt="" id="img20">
+
+    <div id="anniu"><button id="play">开启回忆</button></div>
+    <script>
+        var play = document.getElementById("play");
+        var bg = document.getElementById("bg");
+        play.addEventListener("click", function () {
+            var audio = document.getElementById("music");
+            audio.play();
+            play.style.display = "none";
+            var bg = document.getElementById("bg")
+            bg.className += 'animation1';
+            
+            img13 = document.getElementById("img13")
+            img13.className += 'animation2';
+            img13.style.display = "inherit";
+            setTimeout(function(){
+                img1 = document.getElementById("img1")
+                img1.className += 'animation2';
+                img1.style.display = "inherit"
+            },11000)
+            setTimeout(function(){
+                img4 = document.getElementById("img4")
+                img4.className += 'animation2';
+                img4.style.display = "inherit"
+            },22000)
+            setTimeout(function(){
+                img10 = document.getElementById("img10")
+                img10.className += 'animation2';
+                img10.style.display = "inherit"
+            },33000)
+            setTimeout(function(){
+                img15 = document.getElementById("img15")
+                img15.className += 'animation2';
+                img15.style.display = "inherit"
+            },44000)
+            setTimeout(function(){
+                img16 = document.getElementById("img16")
+                img16.className += 'animation2';
+                img16.style.display = "inherit"
+            },55000)
+            setTimeout(function(){
+                img27 = document.getElementById("img27")
+                img27.className += 'animation2';
+                img27.style.display = "inherit"
+            },66000)
+            setTimeout(function(){
+                img28 = document.getElementById("img28")
+                img28.className += 'animation2';
+                img28.style.display = "inherit"
+            },77000)
+            setTimeout(function(){
+                img26 = document.getElementById("img26")
+                img26.className += 'animation2';
+                img26.style.display = "inherit"
+            },88000)
+            setTimeout(function(){
+                img14 = document.getElementById("img14")
+                img14.className += 'animation2';
+                img14.style.display = "inherit"
+            },99000)
+            setTimeout(function(){
+                img19 = document.getElementById("img19")
+                img19.className += 'animation2';
+                img19.style.display = "inherit"
+            },110000)
+            setTimeout(function(){
+                img12 = document.getElementById("img12")
+                img12.className += 'animation2';
+                img12.style.display = "inherit"
+            },121000)
+            setTimeout(function(){
+                img17 = document.getElementById("img17")
+                img17.className += 'animation2';
+                img17.style.display = "inherit"
+            },132000)
+            setTimeout(function(){
+                img25 = document.getElementById("img25")
+                img25.className += 'animation2';
+                img25.style.display = "inherit"
+            },143000)
+            setTimeout(function(){
+                img23 = document.getElementById("img23")
+                img23.className += 'animation2';
+                img23.style.display = "inherit"
+            },154000)
+            setTimeout(function(){
+                img24 = document.getElementById("img24")
+                img24.className += 'animation2';
+                img24.style.display = "inherit"
+            },165000)
+            setTimeout(function(){
+                img21 = document.getElementById("img21")
+                img21.className += 'animation2';
+                img21.style.display = "inherit"
+            },176000)
+            setTimeout(function(){
+                img11 = document.getElementById("img11")
+                img11.className += 'animation2';
+                img11.style.display = "inherit"
+            },187000)
+            setTimeout(function(){
+                img9 = document.getElementById("img9")
+                img9.className += 'animation2';
+                img9.style.display = "inherit"
+            },198000)
+            setTimeout(function(){
+                img6 = document.getElementById("img6")
+                img6.className += 'animation2';
+                img6.style.display = "inherit"
+            },209000)
+            setTimeout(function(){
+                img7 = document.getElementById("img7")
+                img7.className += 'animation2';
+                img7.style.display = "inherit"
+            },220000)
+            setTimeout(function(){
+                img8 = document.getElementById("img8")
+                img8.className += 'animation2';
+                img8.style.display = "inherit"
+            },231000)
+            setTimeout(function(){
+                img2 = document.getElementById("img2")
+                img2.className += 'animation2';
+                img2.style.display = "inherit"
+            },242000)
+            setTimeout(function(){
+                img5 = document.getElementById("img5")
+                img5.className += 'animation2';
+                img5.style.display = "inherit"
+            },253000)
+            setTimeout(function(){
+                img3 = document.getElementById("img3")
+                img3.className += 'animation2';
+                img3.style.display = "inherit"
+            },264000)
+            setTimeout(function(){
+                img18 = document.getElementById("img18")
+                img18.className += 'animation2';
+                img18.style.display = "inherit"
+            },275000)
+            setTimeout(function(){
+                img20 = document.getElementById("img20")
+                img20.className += 'animation2';
+                img20.style.display = "inherit"
+            },286000)
+        })
+    </script>
+</body>
+
+</html>
